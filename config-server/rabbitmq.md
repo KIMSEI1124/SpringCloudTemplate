@@ -6,13 +6,21 @@
 
 **with Docker**
 
-공식 문서에 있는 방법 그대로 입니다.
+공식 문서에 있는 방법 에서 `volume`만 추가하였습니다.
 
 ```shell
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management
+docker run -it --rm \
+--name rabbitmq \
+-p 5672:5672 -p 15672:15672 \
+-v rabbitmq-data:/var/lib/rabbitmq/ \
+-v rabbitmq-logs:/var/log/rabbitmq/ \
+rabbitmq:3.12-management
 ```
 
 **with docker-compose**
+
+`docker-compose`파일에 추가한다면 아래의 내용을 붙이면 됩니다.
+
 ```yaml
 version: "3"
 services:
@@ -22,6 +30,9 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq/
+      - rabbitmq-logs:/var/log/rabbitmq/
 ```
 
 ## `busrefresh`
@@ -29,8 +40,8 @@ services:
 내용 추가 필요
 
 - [ ] ymal 파일
-  - [ ] 설정 방법
-  - [ ] 사용 방법
+    - [ ] 설정 방법
+    - [ ] 사용 방법
 
 # Ref
 
