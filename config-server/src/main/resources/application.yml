@@ -16,12 +16,19 @@ spring:
   cloud:
     config:
       server:
-        # 테스트 환경을 위한 `git-uri` 입니다.
         git:
           uri: https://github.com/KIMSEI1124/SpringCloudTemplate
-# `Spring Bus`를 활용하여 설정을 `refresh`하기 위한 `rabbitmq` 설정이므로 사용을 원하시면 주석 해제 필요
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 5672
-#    username: guest
-#    password: guest
+          default-label: main
+  #          username:
+  #          password:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
