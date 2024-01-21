@@ -21,11 +21,11 @@ ext {
 
 dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:3.2.1'
     implementation 'org.springframework.cloud:spring-cloud-config-server'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     /* Rabbit Message Queue */
-    implementation 'org.springframework.boot:spring-boot-starter-amqp:3.2.1'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator:3.2.1'
+//    implementation 'org.springframework.boot:spring-boot-starter-amqp:3.2.1'
 }
 
 dependencyManagement {
