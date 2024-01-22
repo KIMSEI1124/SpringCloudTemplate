@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MicroController {
 
     @Value("${hello}")
-    private static String hello;
+    private String hello;
 
     @GetMapping("/get")
     public ResponseEntity<String> get() {
