@@ -4,12 +4,12 @@ server:
 spring:
   application:
     name: micro-service
-  config:
-    import: optional:configserver:http://127.0.0.1:8888
-  #  cloud:
-  #    config:
-  #      uri: http://127.0.0.1:8888
-  #      name: config
+  #  config:
+  #    import: optional:configserver:http://127.0.0.1:8888
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      name: config
   data:
     redis:
       port: 6379
