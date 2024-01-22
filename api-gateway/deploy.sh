@@ -5,6 +5,7 @@ APP_NAME=api-gateway
 IMAGE=api-gateway
 PORT=8000
 
+chmod +x gradlew
 ./gradlew clean build
 
 # Application Stop

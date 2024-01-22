@@ -5,6 +5,7 @@ APP_NAME=discovery-service
 IMAGE=discovery-service
 PORT=8761
 
+chmod +x gradlew
 ./gradlew clean build
 
 # Application Stop

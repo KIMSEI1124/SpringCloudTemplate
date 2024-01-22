@@ -3,8 +3,9 @@
 ###
 APP_NAME=config-server
 IMAGE=config-server
-PORT=8761
+PORT=8888
 
+chmod +x gradlew
 ./gradlew clean build
 
 # Application Stop
