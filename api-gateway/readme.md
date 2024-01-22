@@ -29,3 +29,9 @@ sh deploy.sh
 4. [Spring Boot Starter AMQP](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp)
 5. [Spring Boot Starter Data Redis](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis)
 6. [Project Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok)
+
+## Properties
+
+1. [application.yml]()
+2. [redis]()
+3. [rabbitmq](2. [rabbitmq](https://github.com/KIMSEI1124/SpringCloudTemplate/blob/main/config-server/rabbitmq.md))
