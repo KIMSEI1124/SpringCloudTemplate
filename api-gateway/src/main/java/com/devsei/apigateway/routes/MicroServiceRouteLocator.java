@@ -10,8 +10,10 @@ public class MicroServiceRouteLocator {
     @Bean
     public RouteLocator routes(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("MicroService", r -> r.path("/micro-service/**")
-                        .uri("lb://MICROSERVICE"))
+                .route("micro-service", r -> r.path("/micro-service/**")
+                        .uri("lb://MICRO-SERVICE"))
+                .route("other-service", r -> r.path("/other-service/**")
+                        .uri("lb://OTHER_SERVICE"))
                 .build();
     }
 }
