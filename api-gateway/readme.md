@@ -32,6 +32,6 @@ sh deploy.sh
 
 ## Properties
 
-1. [application.yml]()
-2. [redis]()
-3. [rabbitmq](2. [rabbitmq](https://github.com/KIMSEI1124/SpringCloudTemplate/blob/main/config-server/rabbitmq.md))
+1. [application.yml](https://github.com/KIMSEI1124/SpringCloudTemplate/tree/main/api-gateway/src/main/resources)
+2. [redis](https://github.com/KIMSEI1124/SpringCloudTemplate/blob/main/api-gateway/redis.md)
+3. [rabbitmq](https://github.com/KIMSEI1124/SpringCloudTemplate/blob/main/config-server/rabbitmq.md)
