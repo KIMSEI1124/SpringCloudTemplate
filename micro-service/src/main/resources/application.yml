@@ -3,13 +3,11 @@ server:
 
 spring:
   application:
-    name: micro-service
-  #  config:
-  #    import: optional:configserver:http://127.0.0.1:8888
+    name: micro
   cloud:
     config:
       uri: http://127.0.0.1:8888
-      name: config
+      name: micro
   data:
     redis:
       port: 6379
@@ -33,7 +31,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, busrefresh, refresh, beans, httptrace
+        include: health, busrefresh, busenv, refresh, beans, httptrace
 #  tracing:
 #    sampling:
 #      probability: 1.0
