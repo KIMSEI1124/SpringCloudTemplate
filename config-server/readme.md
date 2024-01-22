@@ -30,4 +30,5 @@ sh deploy.sh
 
 ## Properties Docs
 
-[application.yml](https://github.com/KIMSEI1124/SpringCloudTemplate/tree/main/config-server/src/main/resources)
+1. [application.yml](https://github.com/KIMSEI1124/SpringCloudTemplate/tree/main/config-server/src/main/resources)
+2. [rabbitmq](https://github.com/KIMSEI1124/SpringCloudTemplate/blob/main/config-server/rabbitmq.md)
