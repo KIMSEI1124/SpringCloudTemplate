@@ -9,7 +9,7 @@
 공식 문서에 있는 방법 에서 `volume`만 추가하였습니다.
 
 ```shell
-docker run -it --rm -d\
+docker run -it --rm -d \
 --name rabbitmq \
 -p 5672:5672 -p 15672:15672 \
 -v rabbitmq-data:/var/lib/rabbitmq/ \
