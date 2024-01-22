@@ -13,7 +13,7 @@ public class MicroServiceRouteLocator {
                 .route("micro-service", r -> r.path("/micro-service/**")
                         .uri("lb://MICRO-SERVICE"))
                 .route("other-service", r -> r.path("/other-service/**")
-                        .uri("lb://OTHER_SERVICE"))
+                        .uri("lb://OTHER-SERVICE"))
                 .build();
     }
 }

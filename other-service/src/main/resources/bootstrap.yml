@@ -1,5 +1,5 @@
 spring:
   cloud:
     config:
-      name: micro-service
+      name: other-service
       uri: http://127.0.0.1:8888
