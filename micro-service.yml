@@ -1,3 +1,6 @@
 # Config Server Test Yaml
 
-hello: Hello! This is micro-service!
+spring:
+  config:
+    import:
+      - greeting.yml
